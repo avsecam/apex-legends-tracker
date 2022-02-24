@@ -1,0 +1,113 @@
+.UserForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.UserForm > .username {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.UserForm > .platformDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+.platforms label {
+  display: flex;
+  flex-direction: column;
+  width: 2rem;
+  text-align: center;
+  color: var(--gray);
+  padding: 0 2.8rem;
+  margin: 0.2rem 0;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.UserForm input[type="text"] {
+  font-family: var(--fontSub);
+  font-size: 1rem;
+  border: none;
+  background-color: var(--white);
+  padding: 0.3rem;
+}
+
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  color: var(--white);
+  cursor: pointer;
+}
+
+input[type="radio"]:hover + label::before {
+  content: "\0203a";
+  position: relative;
+  width: 0;
+  height: 0;
+  right: 2rem;
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+input[type="radio"]:hover + label::after {
+  content: "\02039";
+  position: relative;
+  width: 0;
+  height: 0;
+  left: 3.5rem;
+  top: -1.4rem;
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+input[type="radio"]:checked + label,
+input[type="radio"]:hover + label {
+  color: var(--whitePure);
+}
+
+input[type="radio"]:checked + label::before {
+  content: "\0203a";
+  position: relative;
+  width: 0;
+  height: 0;
+  right: 1rem;
+  opacity: 100;
+}
+
+input[type="radio"]:checked + label::after {
+  content: "\02039";
+  position: relative;
+  width: 0;
+  height: 0;
+  left: 2.5rem;
+  top: -1.4rem;
+  opacity: 100;
+}
+
+input[type="submit"] {
+  display: inline-flex;
+  justify-content: center;
+  font-family: var(--fontSub);
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  width: 50%;
+  color: var(--apexRed);
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s;
+}
+
+input[type="submit"]:hover {
+  box-shadow: 0 0 1rem 0.5rem rgba(0, 0, 0, 0.1);
+  background-color: var(--hoverRed);
+  color: var(--whitePure);
+}

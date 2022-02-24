@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+:root {
+  --apexRed: #ae1315;
+  --white: #e0e0e0;
+  --whitePure: #ffffff;
+  --hoverRed: #c4230d;
+  --gray: #6b0404;
+  --online: #46cf1c;
+  --offline: #acacac;
+
+  --fontMain: "Apex", sans-serif;
+  --fontSub: "Abel", sans-serif;
+
+  user-select: none;
+}
+
+@font-face {
+  font-family: 'Apex';
+  src: local('Apex'), url("./assets/Apex Regular.otf") format('opentype');
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  margin: 0;
+  font-family: var(--fontMain);
+  background-color: var(--apexRed);
+  overflow: hidden;
+}

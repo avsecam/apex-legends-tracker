@@ -1,0 +1,94 @@
+.UserData {
+	display: flex;
+	flex-direction: column;
+	padding: 1.5rem;
+	width: 100%;
+	height: 100%;
+}
+
+.UserData > * {
+	text-align: center;
+}
+
+.backButton {
+	position: absolute;
+	left: 5rem;
+	transform: scale(2);
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.UserData .username {
+	font-size: 3rem;
+	text-transform: uppercase;
+	margin-bottom: -0.5rem;
+}
+
+.UserData .uid {
+	margin-bottom: 0.2rem;
+}
+
+.UserData .status {
+	font-family: var(--fontSub);
+	letter-spacing: 0.05rem;
+	font-weight: bold;
+	border-radius: 100px;
+}
+.status.offline {color: var(--offline)}
+.status.online {color: var(--online)}
+
+main {
+	display: flex;
+	height: 100%;
+}
+main * {
+	font-family: var(--fontSub);
+	letter-spacing: normal;
+}
+
+.progressDiv {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+}
+.progressCard {
+	flex: 1;
+	border: 2px solid var(--gray);
+	border-top: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.progressCard:first-of-type {
+	border-top: 2px solid var(--gray)
+}
+.progressTitle {
+	flex: 1;
+}
+.progressLevel {
+	flex: 3;
+	font-family: var(--fontMain);
+	font-size: 2.5rem;
+	margin-top: 1rem;
+}
+.progressToNext {
+	flex: 1;
+}
+
+.activeLegend {
+	flex: 1;
+	border: 2px solid white;
+}
+
+.divider {
+	border: 1px solid var(--gray);
+	margin: 0.8rem 0;
+	width: 100%;
+	box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.1);
+}

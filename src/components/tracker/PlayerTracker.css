@@ -1,0 +1,117 @@
+* {
+  font-family: var(--fontMain);
+  margin: 0;
+}
+
+.skewed {
+  transform: skewX(-15deg)
+}
+
+.PlayerTracker {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 3rem;
+  padding-top: 9rem;
+  box-shadow: 0 0 10rem 1rem rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  width: 13rem;
+  height: 100vh;
+  transition: all 1s;
+}
+
+.PlayerTracker.wide {
+  width: 70vw;
+  max-width: 35remt;
+  padding: 2rem;
+}
+
+.PlayerTracker>h1 {
+  margin-bottom: 1rem;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.SearchResult {
+  position: relative;
+  height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.SearchResult>div {
+  position: absolute;
+  top: 1.5rem;
+}
+
+.SearchResult:hover {
+  color: var(--whitePure);
+  transform: translate(0.1rem, -0.1rem);
+  text-shadow: black -0.2rem 0.2rem;
+  cursor: pointer;
+}
+
+.SearchResult h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-family: var(--fontMain);
+  margin: 0;
+  font-weight: normal;
+}
+
+.uid {
+  font-family: var(--fontSub);
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  white-space: nowrap;
+}
+
+.loader,
+.searchError {
+  position: relative;
+  height: 0;
+}
+
+.searchError>div {
+  position: relative;
+  width: 13rem;
+  top: 0.5rem;
+  font-family: var(--fontSub);
+  font-size: 0.8rem;
+  letter-spacing: normal;
+  color: var(--white);
+  text-align: center;
+}
+
+.loader>div {
+  transform: scale(5);
+  text-align: left;
+  color: var(--whitePure);
+  overflow-x: hidden;
+  animation: dots 0.7s linear infinite;
+}
+
+@keyframes dots {
+  0%,
+  24.9% {
+    width: 0
+  }
+  25%,
+  49.9% {
+    width: 0.33rem
+  }
+  50%,
+  74.9% {
+    width: 0.67rem
+  }
+  75%,
+  100% {
+    width: 1rem
+  }
+}

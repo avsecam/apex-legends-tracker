@@ -1,0 +1,653 @@
+{
+	"data": {
+			"global": {
+					"name": "avsecam",
+					"uid": 2826040421,
+					"avatar": "",
+					"platform": "PC",
+					"level": 775,
+					"toNextLevelPercent": 83,
+					"internalUpdateCount": 20371,
+					"bans": {
+							"isActive": false,
+							"remainingSeconds": 0,
+							"last_banReason": "COMPETITIVE_DODGE_COOLDOWN"
+					},
+					"rank": {
+							"rankScore": 252,
+							"rankName": "Bronze",
+							"rankDiv": 4,
+							"ladderPosPlatform": -1,
+							"rankImg": "https://api.mozambiquehe.re/assets/ranks/bronze4.png",
+							"rankedSeason": "season12_split_1"
+					},
+					"arena": {
+							"rankScore": 4201,
+							"rankName": "Gold",
+							"rankDiv": 2,
+							"ladderPosPlatform": -1,
+							"rankImg": "https://api.mozambiquehe.re/assets/ranks/gold2.png",
+							"rankedSeason": "arenas12_split_1"
+					},
+					"battlepass": {
+							"level": "-1",
+							"history": {
+									"season1": -1,
+									"season2": 0,
+									"season3": -1,
+									"season4": 111,
+									"season5": 111,
+									"season6": -1,
+									"season7": -1,
+									"season8": -1,
+									"season9": 111,
+									"season10": -1,
+									"season11": -1,
+									"season12": -1
+							}
+					},
+					"badges": [
+							{
+									"name": "Smolfinder Here",
+									"value": 0
+							},
+							{
+									"name": "Raiders Master",
+									"value": 0
+							},
+							{
+									"name": "Lost Treasures Master",
+									"value": 0
+							},
+							{
+									"name": "Impress Me",
+									"value": 12
+							},
+							{
+									"name": "Horizon's Test Subject",
+									"value": 0
+							},
+							{
+									"name": "Grand Soiree",
+									"value": 4
+							},
+							{
+									"name": "Genesis Master",
+									"value": 0
+							},
+							{
+									"name": "Genesis Active Participant",
+									"value": 0
+							},
+							{
+									"name": "Airdrop Master",
+									"value": 0
+							}
+					]
+			},
+			"realtime": {
+					"lobbyState": "open",
+					"isOnline": 1,
+					"isInGame": 0,
+					"canJoin": 0,
+					"partyFull": 0,
+					"selectedLegend": "Wattson",
+					"currentState": "offline",
+					"currentStateSinceTimestamp": -1,
+					"currentStateAsText": "Offline"
+			},
+			"legends": {
+					"selected": {
+							"LegendName": "Wattson",
+							"data": [],
+							"gameInfo": {
+									"skin": "Fly-by-Wire",
+									"skinRarity": "Legendary",
+									"frame": "Lightning in a Bottle",
+									"frameRarity": "Legendary",
+									"pose": "Hotwired",
+									"poseRarity": "Epic",
+									"intro": "My adversaries are in for a shock",
+									"introRarity": "Rare",
+									"badges": [
+											{
+													"name": "Horizon's Test Subject",
+													"value": 0,
+													"category": "Account Badges"
+											},
+											{
+													"name": "Apex Wattson",
+													"value": 6,
+													"category": "Wattson"
+											},
+											{
+													"name": "Battle Charge Level: Season 2",
+													"value": 0,
+													"category": "Account Badges"
+											}
+									]
+							},
+							"ImgAssets": {
+									"icon": "https://api.mozambiquehe.re/assets/icons/wattson.png",
+									"banner": "https://api.mozambiquehe.re/assets/banners/wattson.jpg"
+							}
+					},
+					"all": {
+							"Revenant": {
+									"ImgAssets": {
+											"icon": "https://api.mozambiquehe.re/assets/icons/revenant.png",
+											"banner": "https://api.mozambiquehe.re/assets/banners/revenant.jpg"
+									}
+							},
+							"Crypto": {
+									"data": [
+											{
+													"name": "Special event kills",
+													"value": 74,
+													"key": "specialEvent_kills",
+													"rank": {
+															"rankPos": 146917,
+															"topPercent": 60.32
+													},
+													"rankPlatformSpecific": {
+															"rankPos": 85231,
+															"topPercent": 54.15
+													}
+											},
+											{
+													"name": "Special event damage",
+													"value": 27198,
+													"key": "specialEvent_damage",
+													"rank": {
+															"rankPos": 165091,
+															"topPercent": 63.44
+													},
+													"rankPlatformSpecific": {
+															"rankPos": 100304,
+															"topPercent": 59.2
+													}
+											},
+											{
+													"name": "Special event wins",
+													"value": 5,
+													"key": "specialEvent_wins",
+													"rank": {
+															"rankPos": "NOT_CALCULATED_YET",
+															"topPercent": "NOT_CALCULATED_YET"
+													},
+													"rankPlatformSpecific": {
+															"rankPos": "NOT_CALCULATED_YET",
+															"topPercent": "NOT_CALCULATED_YET"
+													}
+											}
+									],
+									"ImgAssets": {
+											"icon": "https://api.mozambiquehe.re/assets/icons/crypto.png",
+											"banner": "https://api.mozambiquehe.re/assets/banners/crypto.jpg"
+									}
+							},
+							"Horizon": {
+									"ImgAssets": {
+											"icon": "https://api.mozambiquehe.re/assets/icons/horizon.png",
+											"banner": "https://api.mozambiquehe.re/assets/banners/horizon.jpg"
+									}
+							},
+							"Gibraltar": {
+									"data": [
+											{
+													"name": "Kills",
+													"value": 78,
+													"key": "kills",
+													"rank": {
+															"rankPos": 612276,
+															"topPercent": 39.95
+													},
+													"rankPlatformSpecific": {
+															"rankPos": 397207,
+															"topPercent": 32.91
+													}
+											}
+									],
+									"ImgAssets": {
+											"icon": "https://api.mozambiquehe.re/assets/icons/gibraltar.png",
+											"banner": "https://api.mozambiquehe.re/assets/banners/gibraltar.jpg"
+									}
+							},
+							"Wattson": {
+									"data": [
+											{
+													"name": "Friendly shields charged",
+													"value": 6949,
+													"key": "shields_charged",
+													"rank": {
+															"rankPos": 44369,
+															"topPercent": 43.56
+													},
+													"rankPlatformSpecific": {
+															"rankPos": 24640,
+															"topPercent": 38.71
+													}
+											},
+											{
+													"name": "Season 3 Wins",
+													"value": 3,
+													"key": "wins_season_3",
+													"rank": {
+															"rankPos": 4972,
+															"topPercent": 24.64
+													},
+													"rankPlatformSpecific": {
+															"rankPos": 3163,
+															"topPercent": 23.44
+													}
+											},
+											{
+													"name": "Season 5 Wins",
+													"value": 4,
+													"key": "wins_season_5",
+													"rank": {
+															"rankPos": 8762,
+															"topPercent": 34.58
+													},
+													"rankPlatformSpecific": {
+															"rankPos": 7278,
+															"topPercent": 36
+													}
+											},
+											{
+													"name": "Season 7 wins",
+													"value": 5,
+													"key": "wins_season_7",
+													"rank": {
+															"rankPos": 1832,
+															"topPercent": 11.75
+													},
+													"rankPlatformSpecific": {
+															"rankPos": 1439,
+															"topPercent": 11.86
+													}
+											},
+											{
+													"name": "Special event kills",
+													"value": 1853,
+													"key": "specialEvent_kills",
+													"rank": {
+															"rankPos": 20511,
+															"topPercent": 6.17
+													},
+													"rankPlatformSpecific": {
+															"rankPos": 6815,
+															"topPercent": 3.43
+													}
+											},
+											{
+													"name": "Special event damage",
+													"value": 629880,
+													"key": "specialEvent_damage",
+													"rank": {
+															"rankPos": 19654,
+															"topPercent": 6.63
+													},
+													"rankPlatformSpecific": {
+															"rankPos": 6994,
+															"topPercent": 3.97
+													}
+											},
+											{
+													"name": "Special event wins",
+													"value": 118,
+													"key": "specialEvent_wins",
+													"rank": {
+															"rankPos": 11872,
+															"topPercent": 7.01
+													},
+													"rankPlatformSpecific": {
+															"rankPos": 3924,
+															"topPercent": 4.13
+													}
+											}
+									],
+									"gameInfo": {
+											"badges": [
+													{
+															"name": "Wattson's Arena",
+															"value": 4
+													},
+													{
+															"name": "Apex Wattson",
+															"value": 5
+													}
+											]
+									},
+									"ImgAssets": {
+											"icon": "https://api.mozambiquehe.re/assets/icons/wattson.png",
+											"banner": "https://api.mozambiquehe.re/assets/banners/wattson.jpg"
+									}
+							},
+							"Fuse": {
+									"ImgAssets": {
+											"icon": "https://api.mozambiquehe.re/assets/icons/fuse.png",
+											"banner": "https://api.mozambiquehe.re/assets/banners/fuse.jpg"
+									}
+							},
+							"Bangalore": {
+									"data": [
+											{
+													"name": "Special event kills",
+													"value": 169,
+													"key": "specialEvent_kills",
+													"rank": {
+															"rankPos": 372913,
+															"topPercent": 56.59
+													},
+													"rankPlatformSpecific": {
+															"rankPos": 227611,
+															"topPercent": 51.01
+													}
+											},
+											{
+													"name": "Special event damage",
+													"value": 53182,
+													"key": "specialEvent_damage",
+													"rank": {
+															"rankPos": 409344,
+															"topPercent": 61.19
+													},
+													"rankPlatformSpecific": {
+															"rankPos": 260474,
+															"topPercent": 57.11
+													}
+											},
+											{
+													"name": "Special event wins",
+													"value": 8,
+													"key": "specialEvent_wins",
+													"rank": {
+															"rankPos": "NOT_CALCULATED_YET",
+															"topPercent": "NOT_CALCULATED_YET"
+													},
+													"rankPlatformSpecific": {
+															"rankPos": "NOT_CALCULATED_YET",
+															"topPercent": "NOT_CALCULATED_YET"
+													}
+											}
+									],
+									"ImgAssets": {
+											"icon": "https://api.mozambiquehe.re/assets/icons/bangalore.png",
+											"banner": "https://api.mozambiquehe.re/assets/banners/bangalore.jpg"
+									}
+							},
+							"Wraith": {
+									"data": [
+											{
+													"name": "Special event kills",
+													"value": 90,
+													"key": "specialEvent_kills",
+													"rank": {
+															"rankPos": 671877,
+															"topPercent": 83.24
+													},
+													"rankPlatformSpecific": {
+															"rankPos": 437680,
+															"topPercent": 80.65
+													}
+											},
+											{
+													"name": "Special event damage",
+													"value": 29475,
+													"key": "specialEvent_damage",
+													"rank": {
+															"rankPos": 622870,
+															"topPercent": 87.22
+													},
+													"rankPlatformSpecific": {
+															"rankPos": 408297,
+															"topPercent": 85.54
+													}
+											},
+											{
+													"name": "Special event wins",
+													"value": 8,
+													"key": "specialEvent_wins",
+													"rank": {
+															"rankPos": "NOT_CALCULATED_YET",
+															"topPercent": "NOT_CALCULATED_YET"
+													},
+													"rankPlatformSpecific": {
+															"rankPos": "NOT_CALCULATED_YET",
+															"topPercent": "NOT_CALCULATED_YET"
+													}
+											}
+									],
+									"gameInfo": {
+											"badges": [
+													{
+															"name": "Wraith's Wrath",
+															"value": 4
+													}
+											]
+									},
+									"ImgAssets": {
+											"icon": "https://api.mozambiquehe.re/assets/icons/wraith.png",
+											"banner": "https://api.mozambiquehe.re/assets/banners/wraith.jpg"
+									}
+							},
+							"Octane": {
+									"ImgAssets": {
+											"icon": "https://api.mozambiquehe.re/assets/icons/octane.png",
+											"banner": "https://api.mozambiquehe.re/assets/banners/octane.jpg"
+									}
+							},
+							"Bloodhound": {
+									"gameInfo": {
+											"badges": [
+													{
+															"name": "Hot Streak",
+															"value": 0
+													}
+											]
+									},
+									"ImgAssets": {
+											"icon": "https://api.mozambiquehe.re/assets/icons/bloodhound.png",
+											"banner": "https://api.mozambiquehe.re/assets/banners/bloodhound.jpg"
+									}
+							},
+							"Caustic": {
+									"ImgAssets": {
+											"icon": "https://api.mozambiquehe.re/assets/icons/caustic.png",
+											"banner": "https://api.mozambiquehe.re/assets/banners/caustic.jpg"
+									}
+							},
+							"Lifeline": {
+									"ImgAssets": {
+											"icon": "https://api.mozambiquehe.re/assets/icons/lifeline.png",
+											"banner": "https://api.mozambiquehe.re/assets/banners/lifeline.jpg"
+									}
+							},
+							"Pathfinder": {
+									"ImgAssets": {
+											"icon": "https://api.mozambiquehe.re/assets/icons/pathfinder.png",
+											"banner": "https://api.mozambiquehe.re/assets/banners/pathfinder.jpg"
+									}
+							},
+							"Loba": {
+									"gameInfo": {
+											"badges": [
+													{
+															"name": "Loba's Wrath",
+															"value": 4
+													}
+											]
+									},
+									"ImgAssets": {
+											"icon": "https://api.mozambiquehe.re/assets/icons/loba.png",
+											"banner": "https://api.mozambiquehe.re/assets/banners/loba.jpg"
+									}
+							},
+							"Mirage": {
+									"data": [
+											{
+													"name": "Special event kills",
+													"value": 475,
+													"key": "specialEvent_kills",
+													"rank": {
+															"rankPos": 107876,
+															"topPercent": 26.27
+													},
+													"rankPlatformSpecific": {
+															"rankPos": 44261,
+															"topPercent": 17.69
+													}
+											},
+											{
+													"name": "Special event damage",
+													"value": 156025,
+													"key": "specialEvent_damage",
+													"rank": {
+															"rankPos": 100640,
+															"topPercent": 28.89
+													},
+													"rankPlatformSpecific": {
+															"rankPos": 43624,
+															"topPercent": 20.66
+													}
+											},
+											{
+													"name": "Special event wins",
+													"value": 30,
+													"key": "specialEvent_wins",
+													"rank": {
+															"rankPos": "NOT_CALCULATED_YET",
+															"topPercent": "NOT_CALCULATED_YET"
+													},
+													"rankPlatformSpecific": {
+															"rankPos": "NOT_CALCULATED_YET",
+															"topPercent": "NOT_CALCULATED_YET"
+													}
+											}
+									],
+									"gameInfo": {
+											"badges": [
+													{
+															"name": "Mirage's Wrath",
+															"value": 3
+													}
+											]
+									},
+									"ImgAssets": {
+											"icon": "https://api.mozambiquehe.re/assets/icons/mirage.png",
+											"banner": "https://api.mozambiquehe.re/assets/banners/mirage.jpg"
+									}
+							},
+							"Rampart": {
+									"ImgAssets": {
+											"icon": "https://api.mozambiquehe.re/assets/icons/rampart.png",
+											"banner": "https://api.mozambiquehe.re/assets/banners/rampart.jpg"
+									}
+							},
+							"Valkyrie": {
+									"ImgAssets": {
+											"icon": "https://api.mozambiquehe.re/assets/icons/valkyrie.png",
+											"banner": "https://api.mozambiquehe.re/assets/banners/valkyrie.jpg"
+									}
+							},
+							"Seer": {
+									"ImgAssets": {
+											"icon": "https://api.mozambiquehe.re/assets/icons/seer.png",
+											"banner": "https://api.mozambiquehe.re/assets/banners/seer.jpg"
+									}
+							},
+							"Ash": {
+									"ImgAssets": {
+											"icon": "https://api.mozambiquehe.re/assets/icons/ash.png",
+											"banner": "https://api.mozambiquehe.re/assets/banners/ash.jpg"
+									}
+							},
+							"Mad Maggie": {
+									"ImgAssets": {
+											"icon": "https://api.mozambiquehe.re/assets/icons/mad maggie.png",
+											"banner": "https://api.mozambiquehe.re/assets/banners/mad maggie.jpg"
+									}
+							}
+					}
+			},
+			"mozambiquehere_internal": {
+					"isNewToDB": false,
+					"claimedBy": "1645600051",
+					"APIAccessType": "BASIC",
+					"ClusterID": "6",
+					"rate_limit": {
+							"max_per_second": 3,
+							"current_req": "1"
+					},
+					"clusterSrv": "MAIN-CLUSTER"
+			},
+			"total": {
+					"specialEvent_kills": {
+							"name": "Special event kills",
+							"value": 2661
+					},
+					"specialEvent_damage": {
+							"name": "Special event damage",
+							"value": 895760
+					},
+					"specialEvent_wins": {
+							"name": "Special event wins",
+							"value": 169
+					},
+					"kills": {
+							"name": "Kills",
+							"value": 78
+					},
+					"shields_charged": {
+							"name": "Friendly shields charged",
+							"value": 6949
+					},
+					"wins_season_3": {
+							"name": "Season 3 Wins",
+							"value": 3
+					},
+					"wins_season_5": {
+							"name": "Season 5 Wins",
+							"value": 4
+					},
+					"wins_season_7": {
+							"name": "Season 7 wins",
+							"value": 5
+					},
+					"kd": {
+							"value": "-1",
+							"name": "KD"
+					}
+			}
+	},
+	"status": 200,
+	"statusText": "",
+	"headers": {
+			"content-type": "text/plain;charset=UTF-8"
+	},
+	"config": {
+			"transitional": {
+					"silentJSONParsing": true,
+					"forcedJSONParsing": true,
+					"clarifyTimeoutError": false
+			},
+			"transformRequest": [
+					null
+			],
+			"transformResponse": [
+					null
+			],
+			"timeout": 0,
+			"xsrfCookieName": "XSRF-TOKEN",
+			"xsrfHeaderName": "X-XSRF-TOKEN",
+			"maxContentLength": -1,
+			"maxBodyLength": -1,
+			"headers": {
+					"Accept": "application/json, text/plain, */*"
+			},
+			"method": "get",
+			"url": "https://api.mozambiquehe.re/bridge?version=5&platform=PC&player=avsecam&auth=MTB44tlehnXiIpXgt9hv"
+	},
+	"request": {}
+}
