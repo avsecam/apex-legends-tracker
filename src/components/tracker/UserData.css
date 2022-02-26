@@ -56,15 +56,10 @@ main * {
 }
 .progressCard {
 	flex: 1;
-	border: 2px solid var(--gray);
-	border-top: none;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	padding: 0.3rem 1rem;
-}
-.progressCard:first-of-type {
-	border-top: 2px solid var(--gray)
 }
 .progressCard > h2 {
 	flex: 1;
@@ -76,8 +71,10 @@ main * {
 	flex: 3;
 	font-family: var(--fontMain);
 	font-size: 3rem;
+	white-space: nowrap;
 	margin-top: 1rem;
 	letter-spacing: 0.1rem;
+	text-transform: uppercase;
 	text-shadow:
 		-0.03rem -0.03rem 0 var(--gray),
 		0.03rem 0.03rem 0 var(--gray),
@@ -103,7 +100,6 @@ main * {
 .activeLegend {
 	flex: 1;
 	padding: 0.3rem 0;
-	border: 2px solid var(--gray);
 	text-transform: uppercase;
 	display: flex;
 	flex-direction: column;
@@ -116,9 +112,13 @@ main * {
 }
 .legendName {
 	font-family: var(--fontMain);
+	font-size: 2rem;
+	letter-spacing: 0.1rem;
+	white-space: nowrap;
+	margin-bottom: 1rem;
 }
 .legendIcon {
-	width: 7rem;
+	width: 10rem;
 	filter: brightness(7) sepia(100) 
 }
 

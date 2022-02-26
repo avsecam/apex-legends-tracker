@@ -13,10 +13,16 @@ class UserData extends React.Component {
 		var rankName = (rankedGamemode === "rank") ? this.props.data.data.global.rank.rankName : this.props.data.data.global.arena.rankName
 		for(let i = 0; i < ranksWithoutDivisions.length; i++) {
 			if(rankName.toLowerCase() === ranksWithoutDivisions[i]) {
-				return true
+				return false
 			}
 		}
-		return false
+		return true
+	}
+
+	isApexPredator(rankedGamemode) {
+		var rankName = (rankedGamemode === "rank") ? this.props.data.data.global.rank.rankName : this.props.data.data.global.arena.rankName
+		if(rankName.toLowerCase() === "apex predator") return true
+		else return false
 	}
 
 	render() {
@@ -50,13 +56,21 @@ class UserData extends React.Component {
 							<div className="progressToNext">{global.toNextLevelPercent}% to Level {global.level + 1}</div>
 							<div className="progressBar"><div style={{width: global.toNextLevelPercent + "%"}}></div></div>
 						</div>
+						<div className="divider"></div>
 						<div className="progressCard">
 							<h2>BATTLE ROYALE RANKED</h2>
-							<div className="progressLevel" style={{color: `var(--${global.rank.rankName.split(" ")[0].toLowerCase()})`}}>{global.rank.rankName} {this.hasRankDivision(global.rank) ? global.rank.rankDiv : ""}</div>
+							<div className="progressLevel" style={{color: `var(--${global.rank.rankName.split(" ")[0].toLowerCase()})`}}>
+								{this.isApexPredator("rank") ? "predator" : global.rank.rankName} {this.hasRankDivision("rank") ? global.rank.rankDiv : ""}
+							</div>
+							<div className="rankPoints">{global.rank.rankScore} AP</div>
 						</div>
+						<div className="divider"></div>
 						<div className="progressCard">
 							<h2>ARENAS RANKED</h2>
-							<div className="progressLevel" style={{color: "var(--" + global.arena.rankName.split(" ")[0].toLowerCase() + ")"}}>{global.arena.rankName} {this.hasRankDivision(global.arena) ? global.rank.rankDiv : ""}</div>
+							<div className="progressLevel" style={{color: "var(--" + global.arena.rankName.split(" ")[0].toLowerCase() + ")"}}>
+								{this.isApexPredator("arena") ? "predator" : global.arena.rankName} {this.hasRankDivision("arena") ? global.arena.rankDiv : ""}
+							</div>
+							<div className="rankPoints">{global.arena.rankScore} AP</div>
 						</div>
 					</div>
 					<div className="activeLegend">
