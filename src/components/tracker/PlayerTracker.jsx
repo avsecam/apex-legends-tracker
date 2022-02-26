@@ -32,20 +32,22 @@ class PlayerTracker extends React.Component {
     this.backToUserForm = this.backToUserForm.bind(this)
   }
 
+  // TODO: serach by UID
   getUserData(username, platform) {
-    this.setState({ loading: true }, () => {
+    this.setState({
+      data: null,
+      loading: true,   
+      username,
+      platform,
+    }, () => {
       axios
         .get(`https://api.mozambiquehe.re/bridge?version=5&platform=${platform}&player=${username}&auth=${apiKey}`)
         .then(res => this.setState({
-          username,
-          platform,
           data: res,
           loading: false,
         }))
         .catch(e => {
           this.setState({
-            username,
-            platform,
             loading: false,
           })
         })
@@ -58,13 +60,13 @@ class PlayerTracker extends React.Component {
     var username = this.state.username
     var platform = this.state.platform
     var errorMessage
-    if (!data || data?.data.global || this.state.loading) return
-    if (data.data.Error.startsWith(ERR_EXISTS_BUT_HAS_NOT_PLAYED)) {
+    if (!username || !platform || data?.data.global || this.state.loading) return
+    if (data?.data.Error.startsWith(ERR_EXISTS_BUT_HAS_NOT_PLAYED)) {
       errorMessage = `Player ${username} exists but has never played on ${platformNames[platform]}.`
     } else {
       errorMessage = `${platformNames[platform]} player ${username} not found.`
     }
-    return <div className="searchError"><div>{errorMessage}</div></div >
+    return <div className="searchError"><div>{errorMessage}</div></div>
   }
 
   renderUserData() {
@@ -77,7 +79,6 @@ class PlayerTracker extends React.Component {
 
   render() {
     var data = this.state.data
-    console.log(data)
     var playerTrackerSizing = (this.state.showUserData) ? "PlayerTracker wide" : "PlayerTracker"
 
     var title = (!this.state.showUserData) ? <h1> APEX TRACKER </h1> : null
@@ -90,7 +91,7 @@ class PlayerTracker extends React.Component {
       /> : null
 
     var searchResult
-    if (data && data.data.global) searchResult = <SearchResult
+    if (data && data.data.global && !this.state.loading) searchResult = <SearchResult
       data={this.state.data}
       renderUserData={this.renderUserData}
     />
@@ -124,6 +125,7 @@ class PlayerTracker extends React.Component {
 class SearchResult extends React.Component {
   render() {
     var global = this.props.data.data.global
+    console.log(this.props.data)
 
     return (
       <div className="SearchResult" onClick={this.props.renderUserData}>

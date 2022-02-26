@@ -1,17 +1,34 @@
 import React from "react"
 import "./UserData.css"
+import legendIcons from "./legendIcons.jsx"
+
+
 import avsecam from "./avsecam.json"
 
-class UserData extends React.Component {
-	render() {
-		// var data = this.props.data.data
 
-		var data = avsecam
+class UserData extends React.Component {
+
+	hasRankDivision(rankedGamemode) {
+		const ranksWithoutDivisions = ["unranked", "master", "apex predator"]
+		var rankName = (rankedGamemode === "rank") ? this.props.data.data.global.rank.rankName : this.props.data.data.global.arena.rankName
+		for(let i = 0; i < ranksWithoutDivisions.length; i++) {
+			if(rankName.toLowerCase() === ranksWithoutDivisions[i]) {
+				return true
+			}
+		}
+		return false
+	}
+
+	render() {
+		var data = this.props.data
+
+		// var data = avsecam
 		var global = data.data.global
 		var realtime = data.data.realtime
+		var legends = data.data.legends
 
 		var isOnline = realtime.isOnline
-		var isInGame = realtime.isInGame
+		var isInGame = (isOnline) ? realtime.isInGame : 0
 
 		return (
 			<div className="UserData">
@@ -28,31 +45,28 @@ class UserData extends React.Component {
 				<main>
 					<div className="progressDiv">
 						<div className="progressCard">
-							<div className="progressTitle">Level</div>
+							<h2>LEVEL</h2>
 							<div className="progressLevel">{global.level}</div>
-							<div className="progressBar"></div>
 							<div className="progressToNext">{global.toNextLevelPercent}% to Level {global.level + 1}</div>
+							<div className="progressBar"><div style={{width: global.toNextLevelPercent + "%"}}></div></div>
 						</div>
-
 						<div className="progressCard">
-							<div className="progressTitle">Level</div>
-							<div className="progressLevel">{global.level}</div>
-							<div className="progressBar"></div>
-							<div className="progressToNext">{global.toNextLevelPercent}% to Level {global.level + 1}</div>
-						</div><div className="progressCard">
-							<div className="progressTitle">Level</div>
-							<div className="progressLevel">{global.level}</div>
-							<div className="progressBar"></div>
-							<div className="progressToNext">{global.toNextLevelPercent}% to Level {global.level + 1}</div>
+							<h2>BATTLE ROYALE RANKED</h2>
+							<div className="progressLevel" style={{color: `var(--${global.rank.rankName.split(" ")[0].toLowerCase()})`}}>{global.rank.rankName} {this.hasRankDivision(global.rank) ? global.rank.rankDiv : ""}</div>
+						</div>
+						<div className="progressCard">
+							<h2>ARENAS RANKED</h2>
+							<div className="progressLevel" style={{color: "var(--" + global.arena.rankName.split(" ")[0].toLowerCase() + ")"}}>{global.arena.rankName} {this.hasRankDivision(global.arena) ? global.rank.rankDiv : ""}</div>
 						</div>
 					</div>
-					<div className="activeLegend">WATTSON</div>
+					<div className="activeLegend">
+						<div className="activeLegendTitle">ACTIVE LEGEND</div>
+						<div className="legendName">{legends.selected.LegendName}</div>
+						<div className="legendIcon"><img src={legendIcons[legends.selected.LegendName]} alt={`${legends.selected.LegendName} icon`}></img></div>
+					</div>
 				</main>
 			</div>
 		)
 	}
 }
-
-
-// progress bar
 export default UserData

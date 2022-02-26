@@ -28,6 +28,14 @@ class UserForm extends React.Component {
 	}
 
 	render() {
+		const platforms = ["PC", "PS4", "X1"]
+		const platformChoices = platforms.map((platform, idx) => {
+			return <div key={idx}>
+				<input type="radio" id={platform} name="platform" onChange={this.handleChange} defaultChecked={(this.state.platform === platform)}/>
+				<label htmlFor={platform}>{platform}</label>
+			</div>
+		})
+
 		return (
 			<form className="UserForm" onSubmit={this.handleSubmit}>
 				<label className="username">
@@ -37,21 +45,10 @@ class UserForm extends React.Component {
 				<div className="platformDiv">
 					PLATFORM
 					<div className="platforms">
-						<div>
-							<input type="radio" id="PC" name="platform" onChange={this.handleChange} />
-							<label htmlFor="PC">PC</label>
-						</div>
-						<div>
-							<input type="radio" id="PS4" name="platform" onChange={this.handleChange} />
-							<label htmlFor="PS4">PS4</label>
-						</div>
-						<div>
-							<input type="radio" id="X1" name="platform" onChange={this.handleChange} />
-							<label htmlFor="X1">X1</label>
-						</div>
+						{platformChoices}
 					</div>
 				</div>
-				<input type="submit" className="skewed" name="submit" value="SEE STATS"/>
+				<input type="submit" className="skewed" name="submit" value="SEARCH"/>
 			</form>
 		)
 	}

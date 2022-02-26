@@ -17,8 +17,8 @@
   box-shadow: 0 0 10rem 1rem rgba(0, 0, 0, 0.1);
   background-color: transparent;
   width: 13rem;
-  height: 100vh;
-  transition: all 1s;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
 }
 
 .PlayerTracker.wide {

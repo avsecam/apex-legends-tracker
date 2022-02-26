@@ -6,8 +6,18 @@
   --whitePure: #ffffff;
   --hoverRed: #c4230d;
   --gray: #6b0404;
+  
   --online: #46cf1c;
   --offline: #acacac;
+
+  --bronze: #ca8639;
+  --silver: #d3d3dd;
+  --gold: #fad456;
+  --platinum: #6ffafe;
+  --diamond: #27aafe;
+  --master: #ce7efc;
+  --apex: #f12720;
+
 
   --fontMain: "Apex", sans-serif;
   --fontSub: "Abel", sans-serif;
@@ -17,7 +27,7 @@
 
 @font-face {
   font-family: 'Apex';
-  src: local('Apex'), url("./assets/Apex Regular.otf") format('opentype');
+  src: local('Apex'), url("./assets/fonts/ApexRegular.otf") format('opentype');
 }
 
 html {

@@ -10,28 +10,22 @@
 	text-align: center;
 }
 
-.backButton {
-	position: absolute;
-	left: 5rem;
-	transform: scale(2);
-}
 
+/* HEADER */
 header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-
 .UserData .username {
 	font-size: 3rem;
 	text-transform: uppercase;
 	margin-bottom: -0.5rem;
+	color: var(--whitePure);
 }
-
 .UserData .uid {
 	margin-bottom: 0.2rem;
 }
-
 .UserData .status {
 	font-family: var(--fontSub);
 	letter-spacing: 0.05rem;
@@ -41,6 +35,7 @@ header {
 .status.offline {color: var(--offline)}
 .status.online {color: var(--online)}
 
+/* MAIN */
 main {
 	display: flex;
 	height: 100%;
@@ -50,10 +45,12 @@ main * {
 	letter-spacing: normal;
 }
 
+/* PROGRESS CARDS */
 .progressDiv {
 	flex: 1;
 	display: flex;
 	flex-direction: column;
+	justify-content: stretch;
 	height: 100%;
 	width: 100%;
 }
@@ -64,28 +61,73 @@ main * {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	padding: 0.3rem 1rem;
 }
 .progressCard:first-of-type {
 	border-top: 2px solid var(--gray)
 }
-.progressTitle {
+.progressCard > h2 {
 	flex: 1;
+	font-weight: bold;
+	letter-spacing: 0.15rem;
+	font-size: 1rem;
 }
 .progressLevel {
 	flex: 3;
 	font-family: var(--fontMain);
-	font-size: 2.5rem;
+	font-size: 3rem;
 	margin-top: 1rem;
+	letter-spacing: 0.1rem;
+	text-shadow:
+		-0.03rem -0.03rem 0 var(--gray),
+		0.03rem 0.03rem 0 var(--gray),
+		0.03rem -0.03rem 0 var(--gray),
+		-0.03rem 0.03rem 0 var(--white);
 }
 .progressToNext {
 	flex: 1;
 }
-
-.activeLegend {
-	flex: 1;
-	border: 2px solid white;
+.progressBar {
+	position: relative;
+	background-color: var(--gray);
+	height: 0.2rem;
+	transform: skewX(-15deg);
+}
+.progressBar > div {
+	position: absolute;
+	height: inherit;
+	background-color: var(--white);
 }
 
+/* ACTIVE LEGEND */
+.activeLegend {
+	flex: 1;
+	padding: 0.3rem 0;
+	border: 2px solid var(--gray);
+	text-transform: uppercase;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.activeLegendTitle {
+	font-weight: bold;
+	letter-spacing: 0.15rem;
+	margin-bottom: 1rem;
+}
+.legendName {
+	font-family: var(--fontMain);
+}
+.legendIcon {
+	width: 7rem;
+	filter: brightness(7) sepia(100) 
+}
+
+/* MISC */
+.backButton {
+	position: absolute;
+	left: 5rem;
+	transform: scale(2);
+}
 .divider {
 	border: 1px solid var(--gray);
 	margin: 0.8rem 0;

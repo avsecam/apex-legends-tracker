@@ -1,3 +1,10 @@
+.animation-stopper * {
+  animation: none !important;
+  transition: none !important;
+}
+
+
+
 .App {
   font-family: var(--fontMain);
   display: flex;
