@@ -125,7 +125,6 @@ class PlayerTracker extends React.Component {
 class SearchResult extends React.Component {
   render() {
     var global = this.props.data.data.global
-    console.log(this.props.data)
 
     return (
       <div className="SearchResult" onClick={this.props.renderUserData}>

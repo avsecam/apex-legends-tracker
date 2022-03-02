@@ -19,4 +19,6 @@
 .App > * {
   flex: 1;
   flex-grow: 1;
+  box-shadow: 0 0 10rem 1rem rgba(0, 0, 0, 0.1);
+  background-color: transparent;
 }

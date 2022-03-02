@@ -9,20 +9,23 @@ class CraftingTracker extends React.Component {
 	constructor(props) {
 		super(props)
 		this.state = {
-
+			data: null,
 		}
+	}
+
+	componentDidMount() {
+		this.getCraftingRotation()
 	}
 
 	getCraftingRotation() {
 		axios
 			.get(`https://api.mozambiquehe.re/crafting?&auth=${apiKey}`)
-			.then(res => console.log("CRAFTING", res))
+			.then(res => this.setState({data: res}))
 	}
 
 	render() {
-		this.getCraftingRotation()
 		return (
-			<div className="MapTracker">
+			<div className="CraftingTracker">
 				<div className="craftingScheduleContainer">
 					<h2>Monthly</h2>
 					<img src="" alt="" />
