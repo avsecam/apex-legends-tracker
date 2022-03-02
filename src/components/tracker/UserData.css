@@ -10,6 +10,11 @@
 	text-align: center;
 }
 
+h2 {
+	font-weight: bold;
+	letter-spacing: 0.15rem;
+	font-size: 1rem;
+}
 
 /* HEADER */
 header {
@@ -63,9 +68,6 @@ main * {
 }
 .progressCard > h2 {
 	flex: 1;
-	font-weight: bold;
-	letter-spacing: 0.15rem;
-	font-size: 1rem;
 }
 .progressLevel {
 	flex: 3;
@@ -75,11 +77,6 @@ main * {
 	margin-top: 1rem;
 	letter-spacing: 0.1rem;
 	text-transform: uppercase;
-	text-shadow:
-		-0.03rem -0.03rem 0 var(--gray),
-		0.03rem 0.03rem 0 var(--gray),
-		0.03rem -0.03rem 0 var(--gray),
-		-0.03rem 0.03rem 0 var(--white);
 }
 .progressToNext {
 	flex: 1;
@@ -105,11 +102,6 @@ main * {
 	flex-direction: column;
 	align-items: center;
 }
-.activeLegendTitle {
-	font-weight: bold;
-	letter-spacing: 0.15rem;
-	margin-bottom: 1rem;
-}
 .legendName {
 	font-family: var(--fontMain);
 	font-size: 2rem;
@@ -124,9 +116,35 @@ main * {
 
 /* MISC */
 .backButton {
+	display: flex;
+	flex-direction: row;
 	position: absolute;
-	left: 5rem;
-	transform: scale(2);
+	left: 2rem;
+	top: 1.5rem;
+	width: 5rem;
+	height: 4.6rem;
+	overflow: hidden;
+	font-size: 4rem;
+	border: none;
+	letter-spacing: 0.05rem;
+	background-color: transparent;
+	color: var(--white);
+	cursor: pointer;
+	transition: all 0.5s;
+}
+.backButton:hover {
+	color: var(--whitePure)
+}
+.backButton > span {
+	position: relative;
+	font-size: 1.5rem;
+	top: 1.35rem;
+	width: 0;
+	overflow-x: hidden;
+	transition: width 0.5s;
+}
+.backButton:hover > span {
+	width: 3.1rem;
 }
 .divider {
 	border: 1px solid var(--gray);

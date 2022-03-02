@@ -13,7 +13,8 @@
   flex-direction: column;
   align-items: center;
   padding: 5rem 3rem;
-  padding-top: 9rem;
+  padding-top: 25rem;
+  margin: 0 5vw;
   box-shadow: 0 0 10rem 1rem rgba(0, 0, 0, 0.1);
   background-color: transparent;
   width: 13rem;

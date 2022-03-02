@@ -1,6 +1,8 @@
 import React from "react"
 import "./App.css"
+import MapTracker from "./components/tracker/MapTracker"
 import PlayerTracker from "./components/tracker/PlayerTracker"
+import CraftingTracker from "./components/tracker/CraftingTracker"
 
 class App extends React.Component {
   constructor(props) {
@@ -12,7 +14,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    // STOP ANIMATING ON RESIZE
+    // Stops animation on resize
     let noAnimsTimer;
     window.addEventListener("resize", () => {
       document.body.classList.add("animation-stopper")
@@ -26,7 +28,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="App" >
+        <MapTracker />
         <PlayerTracker />
+        <CraftingTracker />
       </div>
     )
   }

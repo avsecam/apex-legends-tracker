@@ -38,7 +38,7 @@ class UserData extends React.Component {
 
 		return (
 			<div className="UserData">
-				<button className="backButton" onClick={this.props.back}>BACK</button>
+				<button className="backButton" onClick={this.props.back}>&#8249;<span>BACK</span></button>
 				<header>
 					<h1 className="username">{global.name}</h1>
 					<h2 className="uid">{global.platform}-{global.uid}</h2>
@@ -74,7 +74,7 @@ class UserData extends React.Component {
 						</div>
 					</div>
 					<div className="activeLegend">
-						<div className="activeLegendTitle">ACTIVE LEGEND</div>
+						<h2>ACTIVE LEGEND</h2>
 						<div className="legendName">{legends.selected.LegendName}</div>
 						<div className="legendIcon"><img src={legendIcons[legends.selected.LegendName]} alt={`${legends.selected.LegendName} icon`}></img></div>
 					</div>
