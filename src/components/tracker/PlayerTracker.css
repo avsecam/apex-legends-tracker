@@ -13,19 +13,19 @@
   flex-direction: column;
   align-items: center;
   padding: 5rem 3rem;
-  padding-top: 28rem;
+  padding-top: 8rem;
   margin: 0 5vw;
   width: 13rem;
   height: 100%;
-  transition: width 0.5s, padding 0.5s;
+  transition: width 0.5s, padding-inline 0.5s;
 }
 
 .PlayerTracker.wide {
-  width: 70vw;
-  max-width: 50rem;
-  flex: 3 !important;
+  width: 100vw;
+  flex: 3;
   padding: 2rem;
-  transition: width 0.5s, padding 0.5s;
+  margin: 0 1vw;
+  transition: width 0.5s, padding-inline 0.5s;
 }
 
 .PlayerTracker > h1 {
@@ -37,20 +37,12 @@
 }
 
 /* Apex Logo */
-.PlayerTracker > h1::before {
-  content: "";
-  position: absolute;
-  left: 2.5rem;
-  top: -10rem;
-  width: 8rem;
-  height: 8rem;
-  filter: invert() brightness(0.9);
+.logo {
+  margin-bottom: 1rem;
+  width: 10rem;
+  height: 10rem;
+  filter: invert() brightness(0.95);
   background-image: url("../../assets/Apex.svg");
-  transition: all 0.8s;
-}
-.PlayerTracker > h1:hover::before {
-  transform: rotate(180deg) scale(1.3);
-  filter: invert() brightness(1);
 }
 
 .SearchResult {

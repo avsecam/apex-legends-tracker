@@ -33,22 +33,20 @@ class MapTracker extends React.Component {
 	}
 
 	getMapRotation() {
-		this.setState({}, () => {
-			axios
-			.get(`https://api.mozambiquehe.re/maprotation?version=2&auth=${apiKey}`)
-			.then(res => {
-				console.log("MAP", res)
-				let data = res.data
-				this.setState({
-					br: data.battle_royale,
-					brRanked: data.ranked,
-					arenas: data.arenas,
-					arenasRanked: data.arenasRanked,
+		axios
+		.get(`https://api.mozambiquehe.re/maprotation?version=2&auth=${apiKey}`)
+		.then(res => {
+			console.log("MAP", res)
+			let data = res.data
+			this.setState({
+				br: data.battle_royale,
+				brRanked: data.ranked,
+				arenas: data.arenas,
+				arenasRanked: data.arenasRanked,
 
-					brTimeLeft: this.timeToSeconds(data.battle_royale.current.remainingTimer),
-					arenasTimeLeft: this.timeToSeconds(data.arenas.current.remainingTimer),
-					arenasRankedTimeLeft: this.timeToSeconds(data.arenasRanked.current.remainingTimer),
-				})
+				brTimeLeft: this.timeToSeconds(data.battle_royale.current.remainingTimer),
+				arenasTimeLeft: this.timeToSeconds(data.arenas.current.remainingTimer),
+				arenasRankedTimeLeft: this.timeToSeconds(data.arenasRanked.current.remainingTimer),
 			})
 		})
 	}

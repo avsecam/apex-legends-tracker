@@ -11,6 +11,8 @@ class CraftingTracker extends React.Component {
 		this.state = {
 			data: null,
 		}
+
+		this.getCraftingRotation = this.getCraftingRotation.bind(this)
 	}
 
 	componentDidMount() {
@@ -20,26 +22,63 @@ class CraftingTracker extends React.Component {
 	getCraftingRotation() {
 		axios
 			.get(`https://api.mozambiquehe.re/crafting?&auth=${apiKey}`)
-			.then(res => this.setState({data: res}))
+			.then(res => {
+				this.setState({data: res.data})
+				console.log(this.state.data)
+			})
 	}
 
 	render() {
+		let dailyItems = this.state.data?.[0]
+		let weeklyItems = this.state.data?.[1]
+		let weapons = [this.state.data?.[2], this.state.data?.[3]]
+
+		let dailyItemsDivs = []
+		for(let i = 0; i < 2; i++) {
+			dailyItemsDivs.push(
+				<div
+					key={i}
+					className="replicatorItem"
+					style={{backgroundImage: `url(${dailyItems?.bundleContent[i].itemType.asset})`}}
+				></div>
+			)
+		}
+
+		let weeklyItemsDivs = []
+		for(let i = 0; i < 2; i++) {
+			weeklyItemsDivs.push(
+				<div
+					key={i}
+					className="replicatorItem"
+					style={{backgroundImage: `url(${weeklyItems?.bundleContent[i].itemType.asset})`}}
+				></div>
+			)
+		}
+
+		let weaponsDivs = []
+		for(let i = 0; i < 2; i++) {
+			weaponsDivs.push(
+				<div
+					key={i}
+					className="replicatorItem wide"
+					style={{backgroundImage: `url(${weapons[i]?.bundleContent[0].itemType.asset})`}}
+				></div>
+			)
+		}
+
 		return (
 			<div className="CraftingTracker">
 				<div className="craftingScheduleContainer">
-					<h2>Monthly</h2>
-					<img src="" alt="" />
-					<img src="" alt="" />
+					<h2>Daily</h2>
+					{dailyItemsDivs}
 				</div>
 				<div className="craftingScheduleContainer">
 					<h2>Weekly</h2>
-					<img src="" alt="" />
-					<img src="" alt="" />
+					{weeklyItemsDivs}
 				</div>
 				<div className="craftingScheduleContainer">
 					<h2>Permanent</h2>
-					<img src="" alt="" />
-					<img src="" alt="" />
+					{weaponsDivs}
 				</div>
 			</div>
 		)

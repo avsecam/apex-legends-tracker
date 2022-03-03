@@ -79,16 +79,26 @@ class PlayerTracker extends React.Component {
 
   render() {
     var data = this.state.data
-    var playerTrackerSizing = (this.state.showUserData) ? "PlayerTracker wide" : "PlayerTracker"
 
-    var title = (!this.state.showUserData) ? <h1> APEX TRACKER </h1> : null
+    var logo = (!this.state.showUserData)
+      ? <div className="logo"></div>
+      : null
 
-    var userForm = (!this.state.showUserData) ?
-      <UserForm
+    var playerTrackerSizing = (this.state.showUserData)
+      ? "PlayerTracker wide"
+      : "PlayerTracker"
+
+    var title = (!this.state.showUserData)
+      ? <h1> APEX TRACKER </h1>
+      : null
+
+    var userForm = (!this.state.showUserData)
+      ? <UserForm
         username={this.state.username}
         platform={this.state.platform}
         getUserData={this.getUserData}
-      /> : null
+      />
+      : null
 
     var searchResult
     if (data && data.data.global && !this.state.loading) searchResult = <SearchResult
@@ -97,18 +107,22 @@ class PlayerTracker extends React.Component {
     />
     if (this.state.showUserData) searchResult = null
 
-    var userData = (this.state.showUserData) ?
-      <UserData
+    var userData = (this.state.showUserData)
+      ? <UserData
         data={this.state.data}
         back={this.backToUserForm}
-      /> : null
+      />
+      : null
 
 
     var error = this.renderError()
-    var loader = (this.state.loading) ? <div className="loader"><div>...</div></div> : null
+    var loader = (this.state.loading)
+      ? <div className="loader"><div>...</div></div>
+      : null
 
     return (
       <div className={playerTrackerSizing} >
+        {logo}
         {title}
         {userForm}
         {searchResult}
