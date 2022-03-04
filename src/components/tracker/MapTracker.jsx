@@ -34,7 +34,6 @@ class MapTracker extends React.Component {
 		axios
 		.get(`http://localhost:8000/map-data`)
 		.then(res => {
-			console.log("MAP", res)
 			let data = res.data
 			this.setState({
 				br: data.battle_royale,
@@ -48,7 +47,7 @@ class MapTracker extends React.Component {
 			})
 		})
 		.catch(e => {
-			console.log(e)
+			console.error(e)
 		})
 	}
 
@@ -85,7 +84,6 @@ class MapTracker extends React.Component {
 				if(this.state.brTimeLeft === 0
 				|| this.state.arenasTimeLeft === 0
 				|| this.state.arenasRankedTimeLeft === 0) {
-					console.log("AAA")
 					this.getMapRotation()
 				}
 			})

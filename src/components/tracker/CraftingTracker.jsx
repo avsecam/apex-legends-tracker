@@ -22,7 +22,7 @@ class CraftingTracker extends React.Component {
 			.get(`http://localhost:8000/crafting-data`)
 			.then(res => {
 				this.setState({data: res.data})
-				console.log(this.state.data)
+				// console.log(this.state.data)
 			})
 	}
 
