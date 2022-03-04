@@ -3,6 +3,10 @@
 # api key
 .env
 
+# development server
+/server
+server.js
+
 # dependencies
 /node_modules
 /.pnp
