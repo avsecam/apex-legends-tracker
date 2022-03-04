@@ -42,12 +42,12 @@ class PlayerTracker extends React.Component {
       platform,
     }, () => {
       axios
-        .get(`http://localhost:8000/apex-tracker?platform=${platform}&username=${username}`)
+        .get(`http://localhost:8000/user-data?platform=${platform}&username=${username}`)
         .then(res => this.setState({
           data: res,
           loading: false,
         }))
-        .catch(e => {
+        .catch(() => {
           this.setState({
             loading: false,
           })

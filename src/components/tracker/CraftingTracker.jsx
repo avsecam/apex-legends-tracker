@@ -3,8 +3,6 @@ import React from "react"
 import "./CraftingTracker.css"
 
 
-const apiKey = process.env.REACT_APP_API_KEY
-
 class CraftingTracker extends React.Component {
 	constructor(props) {
 		super(props)
@@ -21,7 +19,7 @@ class CraftingTracker extends React.Component {
 
 	getCraftingRotation() {
 		axios
-			.get(`https://api.mozambiquehe.re/crafting?&auth=${apiKey}`)
+			.get(`http://localhost:8000/crafting-data`)
 			.then(res => {
 				this.setState({data: res.data})
 				console.log(this.state.data)

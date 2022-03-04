@@ -3,8 +3,6 @@ import React from "react"
 import "./MapTracker.css"
 
 
-const apiKey = process.env.REACT_APP_API_KEY
-
 class MapTracker extends React.Component {
 	constructor(props) {
 		super(props)
@@ -34,7 +32,7 @@ class MapTracker extends React.Component {
 
 	getMapRotation() {
 		axios
-		.get(`https://api.mozambiquehe.re/maprotation?version=2&auth=${apiKey}`)
+		.get(`http://localhost:8000/map-data`)
 		.then(res => {
 			console.log("MAP", res)
 			let data = res.data
@@ -48,6 +46,9 @@ class MapTracker extends React.Component {
 				arenasTimeLeft: this.timeToSeconds(data.arenas.current.remainingTimer),
 				arenasRankedTimeLeft: this.timeToSeconds(data.arenasRanked.current.remainingTimer),
 			})
+		})
+		.catch(e => {
+			console.log(e)
 		})
 	}
 
