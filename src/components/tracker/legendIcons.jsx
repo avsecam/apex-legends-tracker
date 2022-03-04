@@ -1,4 +1,4 @@
-export default {
+let legendIcons = {
 	Ash: require("../../assets/legendIcons/Ash.svg").default,
 	Bangalore: require("../../assets/legendIcons/Bangalore.svg").default,
 	Bloodhound: require("../../assets/legendIcons/Bloodhound.svg").default,
@@ -19,3 +19,5 @@ export default {
 	Wattson: require("../../assets/legendIcons/Wattson.svg").default,
 	Wraith: require("../../assets/legendIcons/Wraith.svg").default,
 }
+
+export default legendIcons

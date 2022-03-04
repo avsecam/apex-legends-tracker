@@ -3,7 +3,7 @@ import "./UserData.css"
 import legendIcons from "./legendIcons.jsx"
 
 
-import avsecam from "./avsecam.json"
+// import avsecam from "./avsecam.json"
 
 
 class UserData extends React.Component {
