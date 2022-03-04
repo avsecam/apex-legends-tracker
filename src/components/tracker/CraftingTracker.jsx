@@ -19,7 +19,7 @@ class CraftingTracker extends React.Component {
 
 	getCraftingRotation() {
 		axios
-			.get(`http://localhost:8000/crafting-data`)
+			.get(`https://avsecam-express-server.herokuapp.com/crafting-data`)
 			.then(res => {
 				this.setState({data: res.data})
 				// console.log(this.state.data)

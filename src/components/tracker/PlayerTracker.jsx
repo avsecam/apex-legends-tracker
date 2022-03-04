@@ -42,7 +42,7 @@ class PlayerTracker extends React.Component {
       platform,
     }, () => {
       axios
-        .get(`http://localhost:8000/user-data?platform=${platform}&username=${username}`)
+        .get(`https://avsecam-express-server.herokuapp.com/user-data?platform=${platform}&username=${username}`)
         .then(res => this.setState({
           data: res,
           loading: false,

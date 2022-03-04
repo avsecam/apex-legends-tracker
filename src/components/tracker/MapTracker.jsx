@@ -32,7 +32,7 @@ class MapTracker extends React.Component {
 
 	getMapRotation() {
 		axios
-		.get(`http://localhost:8000/map-data`)
+		.get(`https://avsecam-express-server.herokuapp.com/map-data`)
 		.then(res => {
 			let data = res.data
 			this.setState({
