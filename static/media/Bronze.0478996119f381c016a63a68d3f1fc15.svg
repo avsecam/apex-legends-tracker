@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="128"
+   height="128"
+   viewBox="0 0 33.866666 33.866668"
+   version="1.1"
+   id="svg5"
+   sodipodidocname="Bronze.svg"
+   inkscapeversion="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlnsinkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlnssodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlnssvg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg">
+  <sodipodinamedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscapepageshadow="2"
+     inkscapepageopacity="0.0"
+     inkscapepagecheckerboard="0"
+     showgrid="false"
+     inkscapezoom="5.0859375"
+     inkscapecx="64"
+     inkscapecy="79.827957"
+     inkscapewindow-width="1600"
+     inkscapewindow-height="837"
+     inkscapewindow-x="-8"
+     inkscapewindow-y="-8"
+     inkscapewindow-maximized="1"
+     inkscapecurrent-layer="svg5" />
+  <defs
+     id="defs2" />
+  <g
+     id="layer1"
+     style="opacity:1"
+     transform="matrix(0.79152287,0,0,0.79152287,3.5287205,2.6605781)">
+    <path
+       style="fill:#ca8639;fill-opacity:1;stroke:#ca8639;stroke-width:0.348721;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 0.53223439,32.051407 H 8.6043535 l 8.3295745,-15.144684 8.390154,15.144684 h 7.996387 L 16.946331,2.6395817 Z"
+       id="path1973" />
+  </g>
+</svg>

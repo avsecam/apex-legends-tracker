@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/apex-legends-tracker/static/css/main.16a7f2a5.css",
-    "main.js": "/apex-legends-tracker/static/js/main.6f443900.js",
+    "main.css": "/apex-legends-tracker/static/css/main.d956ddd8.css",
+    "main.js": "/apex-legends-tracker/static/js/main.d153c44c.js",
     "static/media/Crypto.svg": "/apex-legends-tracker/static/media/Crypto.756b3431e4c10f5591511854cb32fda8.svg",
     "static/media/Valkyrie.svg": "/apex-legends-tracker/static/media/Valkyrie.98b76469e6084dd9eb9cdff028f80a02.svg",
     "static/media/Seer.svg": "/apex-legends-tracker/static/media/Seer.c0549030f16679b3790ce4ff17dc27f4.svg",
@@ -13,22 +13,29 @@
     "static/media/Mirage.svg": "/apex-legends-tracker/static/media/Mirage.6e2929203087b884cfe242386a510e82.svg",
     "static/media/Bloodhound.svg": "/apex-legends-tracker/static/media/Bloodhound.df65dc25fa1b2cfb5597438af3d84009.svg",
     "static/media/Fuse.svg": "/apex-legends-tracker/static/media/Fuse.b68823499b8619df25d98c662700277d.svg",
+    "static/media/Predator.svg": "/apex-legends-tracker/static/media/Predator.09837e2e21844aa8ad87dffdfa62ccc0.svg",
     "static/media/Revenant.svg": "/apex-legends-tracker/static/media/Revenant.d295e9ec1ca441a734ec6fd556b5a752.svg",
     "static/media/Octane.svg": "/apex-legends-tracker/static/media/Octane.2371daf782c338a8115631a35de506a2.svg",
     "static/media/Wraith.svg": "/apex-legends-tracker/static/media/Wraith.f0d2db3825afaedfa160878246cbf153.svg",
     "static/media/Caustic.svg": "/apex-legends-tracker/static/media/Caustic.e8653619956a7f7521eb2fe7f38ca89c.svg",
     "static/media/Wattson.svg": "/apex-legends-tracker/static/media/Wattson.a396249da38280f33ea7e50237f20353.svg",
+    "static/media/Master.svg": "/apex-legends-tracker/static/media/Master.493b6c20de0c6f96a0d446d35d40abff.svg",
     "static/media/Bangalore.svg": "/apex-legends-tracker/static/media/Bangalore.d1c0f68ff40d0dc44d2e979b4fec5976.svg",
     "static/media/Gibraltar.svg": "/apex-legends-tracker/static/media/Gibraltar.dd0467fa92b4a60f55ff195d6e4c161a.svg",
     "static/media/Lifeline.svg": "/apex-legends-tracker/static/media/Lifeline.2d660b299e5a282b18a6f25c5de107b0.svg",
+    "static/media/Platinum.svg": "/apex-legends-tracker/static/media/Platinum.a9bff8d0f71058e1e3e59d339fac0674.svg",
+    "static/media/Diamond.svg": "/apex-legends-tracker/static/media/Diamond.bb42699d4bf6d5acfcbf9cb9b1b9b06e.svg",
+    "static/media/Silver.svg": "/apex-legends-tracker/static/media/Silver.d59d8ad2c59bc41057d2f0bfc076e0af.svg",
+    "static/media/Gold.svg": "/apex-legends-tracker/static/media/Gold.18f74b46b69b9274eb9fcd5ffc19b252.svg",
     "static/media/Pathfinder.svg": "/apex-legends-tracker/static/media/Pathfinder.1e854567a224e4cedf511f157e228a4e.svg",
+    "static/media/Bronze.svg": "/apex-legends-tracker/static/media/Bronze.0478996119f381c016a63a68d3f1fc15.svg",
     "static/media/Apex.svg": "/apex-legends-tracker/static/media/Apex.d510d206304465bee3f0.svg",
     "index.html": "/apex-legends-tracker/index.html",
-    "main.16a7f2a5.css.map": "/apex-legends-tracker/static/css/main.16a7f2a5.css.map",
-    "main.6f443900.js.map": "/apex-legends-tracker/static/js/main.6f443900.js.map"
+    "main.d956ddd8.css.map": "/apex-legends-tracker/static/css/main.d956ddd8.css.map",
+    "main.d153c44c.js.map": "/apex-legends-tracker/static/js/main.d153c44c.js.map"
   },
   "entrypoints": [
-    "static/css/main.16a7f2a5.css",
-    "static/js/main.6f443900.js"
+    "static/css/main.d956ddd8.css",
+    "static/js/main.d153c44c.js"
   ]
 }
