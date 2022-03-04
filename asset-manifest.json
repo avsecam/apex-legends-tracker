@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/apex-legends-tracker/static/css/main.9142efbd.css",
+    "main.css": "/apex-legends-tracker/static/css/main.16a7f2a5.css",
     "main.js": "/apex-legends-tracker/static/js/main.6f443900.js",
     "static/media/Crypto.svg": "/apex-legends-tracker/static/media/Crypto.756b3431e4c10f5591511854cb32fda8.svg",
     "static/media/Valkyrie.svg": "/apex-legends-tracker/static/media/Valkyrie.98b76469e6084dd9eb9cdff028f80a02.svg",
@@ -24,11 +24,11 @@
     "static/media/Pathfinder.svg": "/apex-legends-tracker/static/media/Pathfinder.1e854567a224e4cedf511f157e228a4e.svg",
     "static/media/Apex.svg": "/apex-legends-tracker/static/media/Apex.d510d206304465bee3f0.svg",
     "index.html": "/apex-legends-tracker/index.html",
-    "main.9142efbd.css.map": "/apex-legends-tracker/static/css/main.9142efbd.css.map",
+    "main.16a7f2a5.css.map": "/apex-legends-tracker/static/css/main.16a7f2a5.css.map",
     "main.6f443900.js.map": "/apex-legends-tracker/static/js/main.6f443900.js.map"
   },
   "entrypoints": [
-    "static/css/main.9142efbd.css",
+    "static/css/main.16a7f2a5.css",
     "static/js/main.6f443900.js"
   ]
 }
