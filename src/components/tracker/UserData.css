@@ -71,7 +71,7 @@ main * {
 	font-family: var(--fontMain);
 	font-size: 3rem;
 	white-space: nowrap;
-	margin-top: 1rem;
+	margin-top: 3vh;
 	letter-spacing: 0.1rem;
 	text-transform: uppercase;
 	transition: filter 0.2s;
