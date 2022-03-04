@@ -7,58 +7,35 @@
    viewBox="0 0 33.866666 33.866668"
    version="1.1"
    id="svg5"
-   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
-   sodipodi:docname="gold.svg"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   sodipodidocname="Gold.svg"
+   inkscapeversion="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlnsinkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlnssodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview7"
+   xmlnssvg="http://www.w3.org/2000/svg">
+  <sodipodinamedview
+     id="namedview10"
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:document-units="px"
+     inkscapepageshadow="2"
+     inkscapepageopacity="0.0"
+     inkscapepagecheckerboard="0"
      showgrid="false"
-     units="px"
-     inkscape:object-paths="true"
-     inkscape:snap-page="false"
-     showguides="true"
-     inkscape:guide-bbox="true"
-     inkscape:snap-to-guides="false"
-     inkscape:zoom="4.0978571"
-     inkscape:cx="53.198536"
-     inkscape:cy="54.906746"
-     inkscape:window-width="1600"
-     inkscape:window-height="837"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="layer2">
-    <sodipodi:guide
-       position="-3.4000619,16.933333"
-       orientation="0,1"
-       id="guide2394"
-       inkscape:label=""
-       inkscape:locked="false"
-       inkscape:color="rgb(0,0,255)" />
-    <sodipodi:guide
-       position="16.933333,32.488264"
-       orientation="-1,0"
-       id="guide2425"
-       inkscape:label=""
-       inkscape:locked="false"
-       inkscape:color="rgb(0,0,255)" />
-  </sodipodi:namedview>
+     inkscapezoom="5.0859375"
+     inkscapecx="64"
+     inkscapecy="64.09831"
+     inkscapewindow-width="1600"
+     inkscapewindow-height="837"
+     inkscapewindow-x="-8"
+     inkscapewindow-y="-8"
+     inkscapewindow-maximized="1"
+     inkscapecurrent-layer="svg5" />
   <defs
      id="defs2" />
   <g
-     inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="Layer 2">
+     transform="translate(0,0.62427036)">
     <g
        id="g1662"
        transform="matrix(2.0392711,0,0,2.0392711,-16.485626,-13.896469)">
@@ -77,7 +54,5 @@
     </g>
   </g>
   <g
-     inkscape:groupmode="layer"
-     id="layer3"
-     inkscape:label="Layer 3" />
+     id="layer3" />
 </svg>

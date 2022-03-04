@@ -1,6 +1,7 @@
 import React from "react"
 import "./UserData.css"
 import legendIcons from "./legendIcons.jsx"
+import rankIcons from "./rankIcons.jsx"
 
 
 // import avsecam from "./avsecam.json"
@@ -27,6 +28,7 @@ class UserData extends React.Component {
 
 	render() {
 		var data = this.props.data
+		console.log(data)
 
 		// var data = avsecam
 
@@ -63,7 +65,8 @@ class UserData extends React.Component {
 							<div className="progressLevel" style={{color: `var(--${global.rank.rankName.split(" ")[0].toLowerCase()})`}}>
 								{this.isApexPredator("rank") ? "predator" : global.rank.rankName} {this.hasRankDivision("rank") ? global.rank.rankDiv : ""}
 							</div>
-							<div className="rankPoints">{global.rank.rankScore} AP</div>
+							<div className="rankPoints">{global.rank.rankScore} RP</div>
+							<div className="rankBackground" style={{backgroundImage: `url(${this.isApexPredator("rank") ? rankIcons["Predator"] : rankIcons[global.rank.rankName]})`}}></div>
 						</div>
 						<div className="divider"></div>
 						<div className="progressCard">
@@ -72,6 +75,7 @@ class UserData extends React.Component {
 								{this.isApexPredator("arena") ? "predator" : global.arena.rankName} {this.hasRankDivision("arena") ? global.arena.rankDiv : ""}
 							</div>
 							<div className="rankPoints">{global.arena.rankScore} AP</div>
+							<div className="rankBackground" style={{backgroundImage: `url(${this.isApexPredator("arena") ? rankIcons["Predator"] : rankIcons[global.arena.rankName]})`}}></div>
 						</div>
 					</div>
 					<div className="activeLegend">
