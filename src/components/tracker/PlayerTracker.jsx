@@ -6,13 +6,14 @@ import UserData from "./UserData.jsx"
 import "./PlayerTracker.css"
 
 
-const apiKey = process.env.REACT_APP_API_KEY
 const platformNames = {
   PC: "Steam/Origin",
   PS4: "PlayStation 4",
   X1: "Xbox One",
 }
 
+
+// TODO: add UID functionality
 class PlayerTracker extends React.Component {
   constructor(props) {
     super(props)
@@ -41,7 +42,7 @@ class PlayerTracker extends React.Component {
       platform,
     }, () => {
       axios
-        .get(`https://api.mozambiquehe.re/bridge?version=5&platform=${platform}&player=${username}&auth=${apiKey}`)
+        .get(`http://localhost:8000/apex-tracker?platform=${platform}&username=${username}`)
         .then(res => this.setState({
           data: res,
           loading: false,

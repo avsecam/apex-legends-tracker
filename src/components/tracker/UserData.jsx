@@ -29,6 +29,7 @@ class UserData extends React.Component {
 		var data = this.props.data
 
 		// var data = avsecam
+
 		var global = data.data.global
 		var realtime = data.data.realtime
 		var legends = data.data.legends
