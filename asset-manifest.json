@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/apex-legends-tracker/static/css/main.d956ddd8.css",
-    "main.js": "/apex-legends-tracker/static/js/main.db609b93.js",
+    "main.js": "/apex-legends-tracker/static/js/main.ff0f566f.js",
     "static/media/Crypto.svg": "/apex-legends-tracker/static/media/Crypto.756b3431e4c10f5591511854cb32fda8.svg",
     "static/media/Valkyrie.svg": "/apex-legends-tracker/static/media/Valkyrie.98b76469e6084dd9eb9cdff028f80a02.svg",
     "static/media/Seer.svg": "/apex-legends-tracker/static/media/Seer.c0549030f16679b3790ce4ff17dc27f4.svg",
@@ -32,10 +32,10 @@
     "static/media/Apex.svg": "/apex-legends-tracker/static/media/Apex.d510d206304465bee3f0.svg",
     "index.html": "/apex-legends-tracker/index.html",
     "main.d956ddd8.css.map": "/apex-legends-tracker/static/css/main.d956ddd8.css.map",
-    "main.db609b93.js.map": "/apex-legends-tracker/static/js/main.db609b93.js.map"
+    "main.ff0f566f.js.map": "/apex-legends-tracker/static/js/main.ff0f566f.js.map"
   },
   "entrypoints": [
     "static/css/main.d956ddd8.css",
-    "static/js/main.db609b93.js"
+    "static/js/main.ff0f566f.js"
   ]
 }
