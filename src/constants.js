@@ -1,0 +1,1 @@
+export const serverUrl = "https://avsecam-server.onrender.com"

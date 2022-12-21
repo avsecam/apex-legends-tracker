@@ -1,5 +1,6 @@
 import axios from "axios"
 import React from "react"
+import { serverUrl } from "../../constants"
 import "./MapTracker.css"
 
 
@@ -32,7 +33,7 @@ class MapTracker extends React.Component {
 
 	getMapRotation() {
 		axios
-		.get(`https://avsecam-express-server.herokuapp.com/apex-tracker/map-data`)
+		.get(`${serverUrl}/map-data`)
 		.then(res => {
 			let data = res.data
 			this.setState({

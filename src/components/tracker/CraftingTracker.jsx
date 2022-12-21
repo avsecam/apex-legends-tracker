@@ -1,5 +1,6 @@
 import axios from "axios"
 import React from "react"
+import { serverUrl } from "../../constants"
 import "./CraftingTracker.css"
 
 
@@ -19,7 +20,7 @@ class CraftingTracker extends React.Component {
 
 	getCraftingRotation() {
 		axios
-			.get(`https://avsecam-express-server.herokuapp.com/apex-tracker/crafting-data`)
+			.get(`${serverUrl}/crafting-data`)
 			.then(res => {
 				this.setState({data: res.data})
 				// console.log(this.state.data)
@@ -75,7 +76,7 @@ class CraftingTracker extends React.Component {
 					{weeklyItemsDivs}
 				</div>
 				<div className="craftingScheduleContainer">
-					<h2>Permanent</h2>
+					<h2>Seasonal</h2>
 					{weaponsDivs}
 				</div>
 			</div>

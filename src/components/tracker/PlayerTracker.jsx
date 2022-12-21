@@ -4,6 +4,7 @@ import axios from "axios"
 import UserForm from "./UserForm.jsx"
 import UserData from "./UserData.jsx"
 import "./PlayerTracker.css"
+import { serverUrl } from "../../constants.js"
 
 
 const platformNames = {
@@ -42,7 +43,7 @@ class PlayerTracker extends React.Component {
       platform,
     }, () => {
       axios
-        .get(`https://avsecam-express-server.herokuapp.com/apex-tracker/user-data?platform=${platform}&username=${username}`)
+        .get(`${serverUrl}/user-data?platform=${platform}&username=${username}`)
         .then(res => this.setState({
           data: res,
           loading: false,
